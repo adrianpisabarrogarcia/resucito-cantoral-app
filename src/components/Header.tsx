@@ -14,13 +14,33 @@ const Header: React.FC = () => {
   return (
     <AppBar position="static" color="primary" sx={{ px: 2 }}>
       <Toolbar
-        sx={{ display: "flex", justifyContent: "space-between", margin: 1 }}
+        sx={{
+          display: "flex",
+          justifyContent: { xs: "flex-start", sm: "space-between" },
+          alignItems: "center",
+          margin: 1,
+          flexDirection: { xs: "column", sm: "row" },
+        }}
       >
-        <Box display="flex" flexDirection="column">
-          <Typography variant="h4" component="div" sx={{ fontWeight: "bold" }}>
+        <Box
+          display="flex"
+          width={{ xs: "100%", sm: "auto" }}
+          flexDirection="column"
+          marginBottom={{ xs: 1, sm: 0 }}
+        >
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{
+              fontWeight: "bold",
+              textAlign: { xs: "center", sm: "left" },
+            }}
+          >
             RESUCITÓ
           </Typography>
-          <Typography variant="caption" component="div">
+          <Typography variant="caption" component="div" sx={{
+            textAlign: { xs: "center", sm: "left" },
+          }}>
             Cantos para las Comunidades Neocatecumenales
           </Typography>
         </Box>
@@ -38,7 +58,7 @@ const Header: React.FC = () => {
             width: "100%",
             maxWidth: 400,
             height: "50px",
-            display: "flex",
+            display: "flex"
           }}
         >
           <Box
