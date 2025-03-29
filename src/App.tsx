@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./components/Header";
 import { Box, Typography, Container, Paper } from "@mui/material";
 

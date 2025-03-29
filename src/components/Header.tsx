@@ -5,9 +5,7 @@ import {
   Toolbar,
   Typography,
   InputBase,
-  IconButton,
   Box,
-  Button,
   alpha,
 } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
