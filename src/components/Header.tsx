@@ -22,6 +22,7 @@ const Header: React.FC = () => {
           flexDirection: { xs: "column", sm: "row" },
         }}
       >
+        {/* Título */}
         <Box
           display="flex"
           width={{ xs: "100%", sm: "auto" }}
@@ -38,9 +39,13 @@ const Header: React.FC = () => {
           >
             RESUCITÓ
           </Typography>
-          <Typography variant="caption" component="div" sx={{
-            textAlign: { xs: "center", sm: "left" },
-          }}>
+          <Typography
+            variant="caption"
+            component="div"
+            sx={{
+              textAlign: { xs: "center", sm: "left" },
+            }}
+          >
             Cantos para las Comunidades Neocatecumenales
           </Typography>
         </Box>
@@ -58,7 +63,7 @@ const Header: React.FC = () => {
             width: "100%",
             maxWidth: 400,
             height: "50px",
-            display: "flex"
+            display: "flex",
           }}
         >
           <Box
@@ -82,6 +87,7 @@ const Header: React.FC = () => {
             inputProps={{ "aria-label": "buscar" }}
           />
         </Box>
+        {/* Botones */}
         {/* <Button color="inherit">Sobre nosotros</Button> */}
       </Toolbar>
     </AppBar>
